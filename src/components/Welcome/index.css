@@ -1,0 +1,26 @@
+.bg-container {
+  background-color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: #f0bb03;
+  font-family: Bree Serif;
+  font-size: 52px;
+}
+.paragraph {
+  color: #ffffff;
+  font-family: Bree Serif;
+  font-size: 22px;
+}
+
+.button {
+  background-color: #ffffff;
+  font-family: Bree Serif;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
