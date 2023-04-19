@@ -5,18 +5,12 @@ class Welcome extends Component {
   state = {isSubscribed: false}
 
   onSubscribe = () => {
-    console.log(this.state)
     this.setState(prevState => ({isSubscribed: !prevState.isSubscribed}))
   }
 
-  getButtonText = () => {
-    const {isSubscribed} = this.state
-
-    return isSubscribed ? 'Subscribed' : 'Subscribe'
-  }
-
   render() {
-    const buttonText = this.getButtonText()
+    const {isSubscribed} = this.state
+    const buttonText = isSubscribed ? 'subscribe' : 'subscribed'
     return (
       <div className="bg-container">
         <h1 className="heading">Welcome</h1>
